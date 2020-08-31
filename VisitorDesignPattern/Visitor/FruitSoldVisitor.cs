@@ -7,12 +7,12 @@ namespace VisitorDesignPattern.Visitor
     {
         public void Visit(Mango mango)
         {
-            Console.WriteLine($"Total mangoes sold is {mango.Quantity}");
+            Console.WriteLine($"Mangoes sold : {mango.Quantity}");
         }
 
         public void Visit(Apple apple)
         {
-            Console.WriteLine($"Total apples sold is {apple.Quantity}");
+            Console.WriteLine($"Apple sold : {apple.Quantity}");
         }
     }
 }

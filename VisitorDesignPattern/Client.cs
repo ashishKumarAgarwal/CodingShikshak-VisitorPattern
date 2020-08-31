@@ -6,7 +6,7 @@ using VisitorDesignPattern.Visitor;
 
 namespace VisitorDesignPattern
 {
-    class Program
+    class Client
     {
         static void Main(string[] args)
         {
@@ -19,6 +19,7 @@ namespace VisitorDesignPattern
             FruitStructure fruitStructure=new FruitStructure(elements);
 
             fruitStructure.ApplyVisitor(new DiscountVisitor());
+            fruitStructure.ApplyVisitor(new FruitSoldVisitor());
           
         }
     }
